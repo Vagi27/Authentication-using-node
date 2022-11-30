@@ -1,0 +1,42 @@
+<head>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div {
+      display: flex;
+      gap: 3%;
+      justify-content: center;
+    }
+
+    input {
+      margin-bottom: 1em;
+      height: 2.2em;
+  
+      }
+
+      #span {
+        font-size: 26px;
+        border-radius:3px solid black
+      }
+  </style>
+</head>
+
+<h1> This is my home page </h1>
+<div id="div">
+  <span id="span"></span>
+  <form method="GET" action='/logout'>
+    <input type="submit" value="Logout" />
+  </form>
+
+  <!-- <a href='/'>Logout</a> -->
+</div>
+<script src="homepage.js"></script>

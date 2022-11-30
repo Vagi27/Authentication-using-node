@@ -1,0 +1,59 @@
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            /* align-self: center; */
+            /* align-content: center; */
+            /* margin-top: 32vh; */
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            border: 1px solid black;
+            width: 18em;
+            height: 20em;
+            /* align-content: center; */
+            align-items: center;
+            /* align-self: center; */
+            background-color: #eeeeee;
+            padding: 1em;
+            /* justify-content: center; */
+        }
+
+        h1 {
+            /* align-self: center; */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input {
+            height: 2.5em;
+            width: 14em;
+            margin-bottom: 1em;
+        }
+    </style>
+    
+</head>
+
+<div>
+
+    <h1> login page </h1>
+
+    <form method="POST" action="/login">
+        <input class="input" placeholder="username" name="username" required />
+        <input class="input" placeholder="password" name="password" type="password" required minlength="8" />
+        <input id="button" type="submit" value="login">
+    </form>
+    <a href="/signup">Create Account</a>
+</div>
